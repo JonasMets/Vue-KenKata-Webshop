@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import Logo1 from "@/components/header/Logo1";
+import Logo1 from "@/components/logo/Logo1";
 import SearchBox1 from "@/components/searchbox/SearchBox1";
 import MyAccount1 from "@/components/myaccount/MyAccount1";
 
