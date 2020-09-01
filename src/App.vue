@@ -6,10 +6,7 @@
     <!-- här visas den view som är vald i router -->
     <router-view />
 
-    <!-- ta bort div efter test -->
-    <div class="" style="color:blue;text-align:center;  height:200px;">
-      <h3 style="margin-top:100px;">ta bort div i App.vue efter test</h3> 
-    </div>
+    
 
 
 
@@ -55,13 +52,13 @@ export default {
   font-size: 16px !important;
 }
 
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+#app {
+  font-family: "Roboto", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-} */
+  /* text-align: center; */
+  /* color: #2c3e50; */
+}
 
 /* #nav {
   padding: 30px;
