@@ -103,16 +103,6 @@ export default {
 }
 
 .myline1 {
-  /* position: absolute;
-    left: 10px;
-    top: 0.5rem;
-    width: 28px;
-    height: 3px; */
-  /* #20d3c2 */
-  /* background-color: #20d3c2 !important; */
-  /* color: red !important; */
-  /* border-top: #20d3c2 solid; */
-  /* z-index: 1; */
   margin: 0;
   width: 39px;
   height: 1px;
