@@ -6,13 +6,11 @@
     <!-- här visas den view som är vald i router -->
     <router-view />
 
-    
-
-
+    <!-- brands -->
+    <Brand1></Brand1>
 
     <!-- footer -->
     <Footer1></Footer1>
-
   </div>
 </template>
 
@@ -21,12 +19,14 @@
 // import Navbar from "@/components/navigation/Navbar";
 import Header1 from "@/components/header/Header1";
 import Footer1 from "@/components/footer/Footer1";
+import Brand1 from "@/components/brands/Brand1";
 
 export default {
   components: {
     //
     Header1,
-    Footer1
+    Footer1,
+    Brand1,
   },
 };
 </script>
