@@ -34,6 +34,8 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
 /*  här lägger vi de färger som ska användas */
 :root {
   --primaryColor: #20d3c2;
@@ -51,6 +53,13 @@ export default {
 .font-roboto {
   font-family: "Roboto", sans-serif !important;
   font-size: 16px !important;
+}
+.font-play {
+  font-family: 'Play', sans-serif !important;
+}
+
+.color-primary {
+ color: var(--primaryColor);
 }
 
 #app {
