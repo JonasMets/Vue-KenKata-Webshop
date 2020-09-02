@@ -3,7 +3,7 @@
     <div class="backg-theme-1">
       <div class="container mt-5">
         <div class="row text-light">
-          <div class="col-sm">
+          <div class="col">
             <div class>
               <Logo2></Logo2>
             </div>
@@ -42,7 +42,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm">
+          <div class="col">
             <h5 class="text-color-primary text-style-head">CONTACTINFO</h5>
             <div>
               <p class="text-color-primary">Adress:</p>
@@ -60,7 +60,22 @@
               <p>info@website.com</p>
             </div>
           </div>
-          <div class="col-sm">One of three columns</div>
+          <div class="col">
+            <h5 class="text-color-primary text-style-head">USEFUL LINKS</h5>
+            <div>
+              <a class="nav-link text-light usefullinksstyle" href="#">Privacy Policy</a>
+              <a class="nav-link text-light usefullinksstyle" href="#">Terms & Conditions</a>
+              <a class="nav-link text-light usefullinksstyle" href="#">Contact Us</a>
+              <a class="nav-link text-light usefullinksstyle" href="#">Our Sitemap</a>
+              <a class="nav-link text-light usefullinksstyle" href="#">Latest News</a>
+              <a class="nav-link text-light usefullinksstyle" href="#">Returns</a>
+
+            </div>
+          </div>
+          <div class="col">
+            <h5 class="text-color-primary text-style-head">RECENT INSTAGRAM</h5>
+            </div>
+          <div class="col"> <button class="btn btn-backToTop"> <img src="@/assets/ArrowUp.png" alt> </button> </div>
         </div>
       </div>
     </div>
@@ -85,8 +100,7 @@ export default {
 .backg-theme-1 {
   /*  #0E153D */
   background-color: #0e153d;
-  border-top: #20d3c2 solid 6px;
-  border-bottom: #080c24 sol;
+  border-top: var(--primaryColor) solid 6px;
   min-height: 100px;
 }
 .backg-theme-2 {
@@ -106,10 +120,22 @@ export default {
   margin: 0;
   width: 39px;
   height: 1px;
-  background-color: #20d3c2 !important;
-  /* border-bottom: 1px solid #20d3c2; */
+  background-color: var(--primaryColor) !important;
   position: absolute;
   left: 100px;
   top: 12px;
+}
+
+.usefullinksstyle {
+  padding: 0;
+  margin: 1rem 0;
+}
+.usefullinksstyle:hover {
+  color: var(--primaryColor) !important;
+  text-decoration: underline;
+}
+
+.btn-backToTop {
+  background-color: var(--primaryColor) !important;
 }
 </style>

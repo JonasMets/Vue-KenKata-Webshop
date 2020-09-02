@@ -38,6 +38,7 @@ export default {
 :root {
   --primaryColor: #20d3c2;
   --primaryColorDarker: #1eafa0;
+  /* --primaryColorDark: #080c24; */
 
   --mediumGrey: #8a8a8a;
   --almostBlack: #333333;
