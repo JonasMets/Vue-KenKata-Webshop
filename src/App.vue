@@ -61,6 +61,10 @@ export default {
   /* color: #2c3e50; */
 }
 
+.fz-14 {
+  font-size: 14px !important;
+}
+
 /* #nav {
   padding: 30px;
 } */
