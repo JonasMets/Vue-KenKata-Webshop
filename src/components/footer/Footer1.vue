@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="backg-theme-1">
+    <div class="backg-theme-1 d-flex">
       <div class="container mt-5">
         <div class="row text-light">
           <div class="col">
@@ -69,15 +69,73 @@
               <a class="nav-link text-light usefullinksstyle" href="#">Our Sitemap</a>
               <a class="nav-link text-light usefullinksstyle" href="#">Latest News</a>
               <a class="nav-link text-light usefullinksstyle" href="#">Returns</a>
-
             </div>
           </div>
           <div class="col">
             <h5 class="text-color-primary text-style-head">RECENT INSTAGRAM</h5>
+            <!-- <div class="row justify-content-between">
+              <div class="col-12">
+                <a href="#" class>
+                  <div class="instagramgrey rounded"></div>
+                </a>
+              </div>
+              <div class="col-12">
+                <a href="#" class>
+                  <div class="instagramgrey rounded"></div>
+                </a>
+              </div>
+              <div class="col-12">
+                <a href="#" class>
+                  <div class="instagramgrey rounded"></div>
+                </a>
+              </div>
+            </div>-->
+
+            <div class="row justify-content-between">
+              <div class="col-5 col-lg-4">
+                <div class="instagramgrey rounded"></div>
+              </div>
+              <div class="col-5 col-lg-4">
+                <div class="instagramgrey rounded"></div>
+              </div>
+              <div class="col-5 col-lg-4">
+                <div class="instagramgrey rounded"></div>
+              </div>
+              <div class="col-5 col-lg-4">
+                <div class="instagramgrey rounded"></div>
+              </div>
+              <div class="col-5 col-lg-4">
+                <div class="instagramgrey rounded"></div>
+              </div>
+              <div class="col-5 col-lg-4">
+                <div class="instagramgrey rounded"></div>
+              </div>
+              <div class="col-5 col-lg-4">
+                <div class="instagramgrey rounded"></div>
+              </div>
+              <div class="col-5 col-lg-4">
+                <div class="instagramgrey rounded"></div>
+              </div>
+              <div class="col-5 col-lg-4">
+                <div class="instagramgrey rounded"></div>
+              </div>
             </div>
-          <div class="col"> <button class="btn btn-backToTop"> <img src="@/assets/ArrowUp.png" alt> </button> </div>
+          </div>
         </div>
+        <!-- end row -->
       </div>
+
+      <!--  -->
+      <!-- <div class="row"> -->
+      <!-- <div class="col"> -->
+      <!-- d-flex justify-content-end -->
+      <div class="mt-4 mr-5">
+        <button class="btn btn-backToTop">
+          <img src="@/assets/ArrowUp.png" alt />
+        </button>
+      </div>
+      <!-- </div> -->
+      <!-- </div> -->
     </div>
 
     <div class="backg-theme-2">
@@ -133,6 +191,15 @@ export default {
 .usefullinksstyle:hover {
   color: var(--primaryColor) !important;
   text-decoration: underline;
+}
+
+.instagramgrey {
+  height: 78px;
+  width: 78px;
+  background-color: #cccccc;
+  /* border-radius: ; */
+  margin: 0.5rem;
+  /* padding: 20px; */
 }
 
 .btn-backToTop {
