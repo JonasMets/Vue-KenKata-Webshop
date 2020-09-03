@@ -1,22 +1,16 @@
 <template>
   <!--          container -->
   <div class="overflow-hidden mt-5">
-    <!-- <h3>why use us argument here</h3> -->
-
-    <!-- #_24_icon -->
-    <!-- <svg class="logo">
-      <use xlink:href="@/assets/24icon.svg#_24_icon" />
-    </svg>-->
 
     <div class="row align-items-center justify-content-center">
       <div class="col-7 col-md-12 col-lg-12">
         <div class="owl-carousel owl-theme" id="slider1">
-          <div class="item d-flex justify-content-center align-items-center arguments">
+          <div class="item d-flex justify-content-center align-items-center">
             <div id="arguments1" class="d-flex align-items-center rounded">
               <svg class="icons">
                 <use xlink:href="@/assets/24icon.svg#_24_icon" />
               </svg>
-              <div>
+              <div class="argument-text">
                 <p class="color-primary">24/7 Support</p>
                 <p>For any inquiry, we are available 24 hours every day</p>
               </div>
@@ -27,7 +21,7 @@
               <svg class="icons">
                 <use xlink:href="@/assets/freeshipping.svg#Path_593" />
               </svg>
-              <div>
+              <div class="argument-text">
                 <p class="color-primary">Free Shipping</p>
                 <p>For a local customer, we provide free shipping facility</p>
               </div>
@@ -38,7 +32,7 @@
               <svg class="icons">
                 <use xlink:href="@/assets/onlinepayment.svg#Path_36" />
               </svg>
-              <div>
+              <div class="argument-text">
                 <p class="color-primary">Online payment</p>
                 <p>You can pay quickly and easily with our online payment system</p>
               </div>
@@ -49,7 +43,7 @@
               <svg class="icons">
                 <use xlink:href="@/assets/Group1158.svg#Group_1158" />
               </svg>
-              <div>
+              <div class="argument-text">
                 <p class="color-primary">Fast delivery</p>
                 <p>We understand your urgency and we deliver in a fast way</p>
               </div>
@@ -97,13 +91,14 @@ $(document).ready(function () {
 
 <style scoped>
 #arguments1 {
-  background-color: rgba(32, 211, 194, 0.2);
-  padding-top: 20px;
+  background-color: rgba(32, 211, 194, 0.1);
+  /* padding-top: 20px; */
+  width: 397px;
+  min-height: 137px;
 }
 #arguments1:hover {
   background-color: rgba(32, 211, 194, 1);
   color: #fff;
-  /* filter: brightness(0) invert(1); */
 }
 
 #arguments1:hover p{
@@ -120,9 +115,11 @@ $(document).ready(function () {
   height: 55px;
   margin-left: 25px;
   margin-right: 20px;
-  /* margin-bottom: 5px; */
-  /* padding-bottom: 5px; */
   fill: #20d3c2;
+}
+
+.argument-text {
+  margin-right: 35px;
 }
 
 </style>
