@@ -2,7 +2,8 @@
   <div class="bg-banner1">
     <div class="container">
       <!-- <h2>Banner carousel here</h2> -->
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <!--                                                                           data-interval="5000"-->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="6000">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row align-items-center">

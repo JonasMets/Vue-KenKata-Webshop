@@ -1,11 +1,12 @@
 <template>
   <div class="home">
-    
-    <!-- <div class="" style="color:blue;text-align:center;  height:200px;">
-      <h3 style="margin-top:100px;">ta bort div i Home.vue efter test</h3> 
-    </div> -->
-    <BannerHome1></BannerHome1>
 
+    <section id="bannerHome">
+      <BannerHome1></BannerHome1>
+    </section>
+    <section id="userargument1">
+      <UserArgument1></UserArgument1>
+    </section>
 
   </div>
 </template>
@@ -13,12 +14,14 @@
 <script>
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
-import  BannerHome1 from '@/components/banner/BannerHome1.vue';
+import BannerHome1 from "@/components/banner/BannerHome1.vue";
+import UserArgument1 from "@/components/why-use-our-site/UserArgument1.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    BannerHome1
-  }
-}
+    BannerHome1,
+    UserArgument1
+  },
+};
 </script>
