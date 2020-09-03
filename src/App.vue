@@ -76,6 +76,10 @@ export default {
   font-size: 14px !important;
 }
 
+.fs-36 {
+    font-size: 36px !important;
+  }
+
 /* #nav {
   padding: 30px;
 } */
