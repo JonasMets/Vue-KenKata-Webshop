@@ -44,6 +44,10 @@ export default {
   --primaryColorDarker: #1eafa0;
   /* --primaryColorDark: #080c24; */
 
+  --mydark-blue: #0e153d;
+
+  --white: #ffffff;
+
   --mediumGrey: #8a8a8a;
   --almostBlack: #333333;
 

@@ -8,11 +8,14 @@
     </section>
 
     <section id="shopByCategory">
-      <!-- <ShopByCategory1></ShopByCategory1> -->
-      <!-- test -->
-      <ShopByCategory12></ShopByCategory12>
-      <!-- test -->
+      <ShopByCategory1></ShopByCategory1>
     </section>
+
+    <section id="neWArrivals">
+      <NewArrivals></NewArrivals>
+    </section>
+
+
   </div>
 </template>
 
@@ -22,15 +25,16 @@
 import BannerHome1 from "@/components/banner/BannerHome1.vue";
 import UserArgument1 from "@/components/why-use-our-site/UserArgument1.vue";
 // import ShopByCategory1 from "@/components/shop-by-category/ShopByCategory1.vue";
-import ShopByCategory12 from "@/components/shop-by-category/ShopByCategory1_2.vue";
+import ShopByCategory1 from "@/components/shop-by-category/ShopByCategory1.vue";
+import NewArrivals from "@/components/newarrivals/NewArrivals.vue";
 
 export default {
   name: "Home",
   components: {
     BannerHome1,
     UserArgument1,
-    // ShopByCategory1,
-    ShopByCategory12
-  },
+    ShopByCategory1,
+    NewArrivals
+  }
 };
 </script>

@@ -1,75 +1,88 @@
 <template>
-  <div class="container mt-5">
-    <div class="d-flex justify-content-center font-play">
-      <h2 class="fs-36 font-weight-bolder">
-        SHOP BY
-        <span class="color-primary fs-36 font-weight-bolder">CATEGORY</span>
-      </h2>
-    </div>
-    <div class="d-flex justify-content-center">
-      <img src="@/assets/wave.png" alt class />
-    </div>
-    <!--  d-flex justify-content-center-->
-    <div class="d-flex justify-content-center">
-      <p>We always try to give you the best product within a fast and reliable way</p>
+  <div class="container mt-5 justify-content-center text-center">
+    <div class="row">
+      <div class="col">
+        <div class="d-flex justify-content-center font-play">
+          <h2 class="fs-36 font-weight-bolder">
+            SHOP BY
+            <span class="color-primary fs-36 font-weight-bolder">CATEGORY</span>
+          </h2>
+        </div>
+        <div class="d-flex justify-content-center">
+          <img src="@/assets/wave.png" alt class />
+        </div>
+        <!--  d-flex justify-content-center-->
+        <div class="d-flex justify-content-center">
+          <p>We always try to give you the best product within a fast and reliable way</p>
+        </div>
+      </div>
     </div>
 
     <!-- css grid -->
-    <div class="row overflow-hidden">
-      <div class="col-12">
-        <div class="grid-container">
+    <!-- <div class="row  overflow-hidden"> -->
+      <!-- <div class="col"> -->
+        <div class="grid-container justify-content-center">
           <div class="item1">
-            <div class="category-men d-flex align-items-end rounded">
+
+            <a href="#"> <div class="category-men category-d-sm d-flex align-items-end rounded">
               <a href="#" class>
                 <div class="bg-category">Men</div>
               </a>
             </div>
+            </a>
+
           </div>
           <div class="item2">
-            <div class="category-women d-flex align-items-end rounded">
+            <a href="#"> <div class="category-women category-d-sm d-flex align-items-end rounded">
               <a href="#">
                 <div class="bg-category">Women</div>
               </a>
             </div>
+            </a>
           </div>
           <div class="item3">
-            <div class="category-kids d-flex align-items-end rounded">
+            <a href="#"> <div class="category-kids category-d-sm d-flex align-items-end rounded">
               <a href>
                 <div class="bg-category">Kids</div>
               </a>
             </div>
+            </a>
           </div>
           <div class="item4">
-            <div class="category-shoes d-flex align-items-end rounded">
+            <a href="#"> <div class="category-shoes category-d-sm d-flex align-items-end rounded">
               <a href>
                 <div class="bg-category">Shoes</div>
               </a>
             </div>
+            </a>
           </div>
           <div class="item5">
-            <div class="category-hats d-flex align-items-end rounded">
+            <a href="#"> <div class="category-hats category-d-sm d-flex align-items-end rounded">
               <a href>
                 <div class="bg-category">Hats</div>
               </a>
             </div>
+            </a>
           </div>
           <div class="item6">
-            <div class="category-sunglasses d-flex align-items-end rounded">
+            <a href="#"> <div class="category-sunglasses category-d-sm d-flex align-items-end rounded">
               <a href>
                 <div class="bg-category">Sunglasses</div>
               </a>
             </div>
+            </a>
           </div>
           <div class="item7">
-            <div class="category-watches d-flex align-items-end rounded">
+            <a href="#"> <div class="category-watches category-d-sm d-flex align-items-end rounded">
               <a href>
                 <div class="bg-category">Watches</div>
               </a>
             </div>
+            </a>
           </div>
         </div>
-      </div>
-    </div>
+      <!-- </div> -->
+    <!-- </div> -->
 
     <!-- css grid end-->
   </div>
@@ -84,38 +97,145 @@ export default {};
   background-color: #0e153d;
   color: #20d3c2;
   border-radius: 0 5px 0 5px;
-  padding: 5px;
+  padding: 0 5px 0 5px;
 }
+
+.category-men {
+  height: 150px;
+  width: 150px;
+  background-color: #cccccc;
+  padding: 0;
+}
+
+.category-women {
+  height: 150px;
+  width: 150px;
+  background-color: #cccccc;
+  padding: 0;
+}
+
+.category-kids {
+  height: 150px;
+  width: 150px;
+  background-color: #cccccc;
+  padding: 0;
+}
+
+.category-shoes {
+  height: 150px;
+  width: 150px;
+  background-color: #cccccc;
+  padding: 0;
+}
+
+.category-hats {
+  height: 150px;
+  width: 150px;
+  background-color: #cccccc;
+  padding: 0;
+}
+
+.category-sunglasses {
+  height: 150px;
+  width: 150px;
+  background-color: #cccccc;
+  padding: 0;
+}
+
+.category-watches {
+  height: 150px;
+  width: 150px;
+  background-color: #cccccc;
+  padding: 0;
+}
+
+/* css grid 2 */
+
+.item1 {
+  grid-area: men;
+}
+.item2 {
+  grid-area: women;
+}
+.item3 {
+  grid-area: kids;
+}
+.item4 {
+  grid-area: shoes;
+}
+.item5 {
+  grid-area: hats;
+}
+.item6 {
+  grid-area: sunglasses;
+}
+.item7 {
+  grid-area: watches;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    "men women"
+    "kids shoes"
+    "sunglasses hats"
+    "watches watches";
+    grid-gap: 5px;
+  }
+
+/* .grid-container {
+  display: grid;
+  grid-template-areas:
+    "men women women kids kids "
+    "shoes shoes hats kids kids"
+    "shoes shoes sunglasses sunglasses watches";
+  grid-gap: 5px;
+  background-color: #2196f3;
+} */
+
+
+
+@media only screen and (min-width: 600px) {
+  
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "men men women women"
+    "kids kids shoes shoes"
+    "hats hats sunglasses sunglasses"
+    "watches watches watches watches";
+  grid-gap: 5px;
+  /* background-color: #2196f3; */
+  /* padding: 10px; */
+}
+
 
 .category-men {
   height: 214px;
   width: 214px;
   background-color: #cccccc;
-  /* margin: 0.5rem; */
   padding: 0;
 }
 
 .category-women {
   height: 214px;
-  width: 438px;
+  width: 214px;
   background-color: #cccccc;
-  /* margin: 0.5rem; */
   padding: 0;
 }
 
 .category-kids {
-  height: 438px;
-  width: 438px;
+  height: 214px;
+  width: 214px;
   background-color: #cccccc;
-  /* margin: 0.5rem; */
   padding: 0;
 }
 
 .category-shoes {
-  height: 438px;
-  width: 438px;
+  height: 214px;
+  width: 214px;
   background-color: #cccccc;
-  /* margin: 0.5rem; */
   padding: 0;
 }
 
@@ -123,15 +243,13 @@ export default {};
   height: 214px;
   width: 214px;
   background-color: #cccccc;
-  /* margin: 0.5rem; */
   padding: 0;
 }
 
 .category-sunglasses {
   height: 214px;
-  width: 438px;
+  width: 214px;
   background-color: #cccccc;
-  /* margin: 0.5rem; */
   padding: 0;
 }
 
@@ -139,101 +257,75 @@ export default {};
   height: 214px;
   width: 214px;
   background-color: #cccccc;
-  /* margin: 0.5rem; */
   padding: 0;
 }
 
-/* css grid */
-/* .grid-layout {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  grid-gap: 10px;
-  grid-auto-rows: minmax(180px, auto);
-  grid-auto-flow: dense;
-  padding: 10px;
-} */
+}
 
-/* .grid-item {
-  padding: 1rem;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #929796;
-  background-color: #333;
-  border-radius: 5px;
+@media only screen and (min-width: 1100px) {
   
-} */
 
-/* .span-2 {
-  grid-column-end: span 2;
-  grid-row-end: span 2;
-} */
-
-/* .span-3 {
-  grid-column-end: span 3;
-  grid-row-end: span 4;
-} */
-
-/* css grid 2 */
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
-  /* background-color: #2196f3; */
-  /* padding: 10px; */
-}
-.item1 {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-.item2 {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 3;
-  grid-column-end: 7;
-}
-.item3 {
-  grid-row-start: 1;
-  grid-row-end: 4;
-  grid-column-start: 7;
-  grid-column-end: 12;
-}
-.item4 {
-  grid-row-start: 2;
-  grid-row-end: 5;
-  grid-column-start: 1;
-  grid-column-end: 5;
+  grid-template-areas:
+    "men women women kids kids "
+    "shoes shoes hats kids kids"
+    "shoes shoes sunglasses sunglasses watches";
+  grid-gap: 5px;
+  
 }
 
-.item5 {
-  grid-row-start: 2;
-  grid-row-end: 4;
-  grid-column-start: 5;
-  grid-column-end: 7;
-}
-.item6 {
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 5;
-  grid-column-end: 9;
-}
-.item7 {
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 9;
-  grid-column-end: 12;
+
+
+.category-men {
+  height: 214px;
+  width: 214px;
+  background-color: #cccccc;
+  padding: 0;
 }
 
-@media only screen and (max-width: 600px) {
-  .grid-container {
-  display: block;
-  /* grid-template-columns: auto auto auto; */
-  /* grid-gap: 10px; */
-  /* background-color: #2196f3; */
-  /* padding: 10px; */
+.category-women {
+  height: 214px;
+  width: 438px;
+  background-color: #cccccc;
+  padding: 0;
 }
+
+.category-kids {
+  height: 438px;
+  width: 438px;
+  background-color: #cccccc;
+  padding: 0;
+}
+
+.category-shoes {
+  height: 438px;
+  width: 438px;
+  background-color: #cccccc;
+  padding: 0;
+}
+
+.category-hats {
+  height: 214px;
+  width: 214px;
+  background-color: #cccccc;
+  padding: 0;
+}
+
+.category-sunglasses {
+  height: 214px;
+  width: 438px;
+  background-color: #cccccc;
+  padding: 0;
+}
+
+.category-watches {
+  height: 214px;
+  width: 214px;
+  background-color: #cccccc;
+  padding: 0;
+}
+
 }
 
 </style>
