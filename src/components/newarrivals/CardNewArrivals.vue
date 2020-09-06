@@ -3,14 +3,31 @@
     <!-- d-flex justify-content-center -->
     <div class="container">
       <!-- style="width: 18rem;" -->
-      <div class="card text-center position-relative" style="width: 18rem;">
+      <div class="card text-center position-relative my-card-style rounded" >
         <div>
           <!--  rounded-circle d-flex justify-content-center-->
-          <div class=" myAlert1 d-flex align-items-center justify-content-center">New</div>
-          <img src="@/assets/Productsleeve.png" class="card-img-top my-img-bg img-fluid" alt="sleeve" />
+          <div class="myAlert1 d-flex align-items-center justify-content-center">New</div>
+          <img
+            src="@/assets/Productsleeve.png"
+            class="card-img-top my-img-bg img-fluid"
+            alt="sleeve"
+          />
         </div>
-        <div class="card-footer myCard-footer text-left">Blue silk flare sleeved top</div>
+        <div class="card-footer myCard-footer text-left rounded-bottom">Blue silk flare sleeved top</div>
+
+        <!-- overlay content -->
+        <div id="my-overlay1" class="d-flex justify-content-start d-flex align-items-end">
+          <div class="overlay-content1">
+            <div class="text-light head-text">New look men's coat</div>
+            <!-- <div class="btn btn-outline-primary text-light">Fashion</div> -->
+            <button type="button" class="btn btn-sm btn-outline-primary text-light d-flex justify-content-start">Fashion</button>
+            <p class="text-light strike d-flex justify-content-start p-0 m-0"> <s>$220.00</s> </p>
+            <p class="price d-flex justify-content-start p-0 m-0">$190.00</p>
+          </div>
+        </div>
+        <!-- overlay content end -->
       </div>
+      <!-- card end -->
     </div>
   </div>
 </template>
@@ -21,27 +38,74 @@ export default {};
 
 <style scoped>
 
-  .myCard-footer {
-    background-color: var(--mydark-blue);
-    color: var(--white);
-    font-size: 18px;
-  }
+.my-card-style {
+  width: 21.875rem;
+  height: 25rem;
+}
 
-  .myAlert1 {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: var(--primaryColor);
-    color: var(--white);
-    /* padding: 5px; */
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-  }
+.myCard-footer {
+  background-color: var(--mydark-blue);
+  color: var(--white);
+  font-size: 18px;
+}
 
-  .my-img-bg {
-    background-color: #eeeeee;
-  }
+.myAlert1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--primaryColor);
+  color: var(--white);
+  /* padding: 5px; */
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.my-img-bg {
+  background-color: #eeeeee;
+}
+
+#my-overlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(31, 48, 143, 0.9);
+  /* color: rgb(14, 21, 61); */
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+#my-overlay1:hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 21, 61, 0.9);
+  /* color: rgb(14, 21, 61); */
+  opacity: 1;
+}
 
 
+
+
+#my-overlay1 .btn {
+  border-color: var(--white) !important;
+}
+
+
+#my-overlay1 .overlay-content1 {
+  margin: 0 0 20px 20px;
+}
+
+#my-overlay1 .head-text {
+  font-size: 18px;
+}
+
+#my-overlay1 .price {
+  color: var(--primaryColor);
+  font-size: 24px;
+  font-weight: 700;
+}
 </style>
