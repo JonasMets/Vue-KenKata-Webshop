@@ -3,7 +3,7 @@
     <!-- d-flex justify-content-center -->
     <div class="container">
       <!-- style="width: 18rem;" -->
-      <div class="card text-center position-relative my-card-style rounded" >
+      <div class="card text-center position-relative my-card-style rounded">
         <div>
           <!--  rounded-circle d-flex justify-content-center-->
           <div class="myAlert1 d-flex align-items-center justify-content-center">New</div>
@@ -20,10 +20,22 @@
           <div class="overlay-content1">
             <div class="text-light head-text">New look men's coat</div>
             <!-- <div class="btn btn-outline-primary text-light">Fashion</div> -->
-            <button type="button" class="btn btn-sm btn-outline-primary text-light d-flex justify-content-start">Fashion</button>
-            <p class="text-light strike d-flex justify-content-start p-0 m-0"> <s>$220.00</s> </p>
+            <button
+              type="button"
+              class="btn btn-sm btn-outline-primary text-light d-flex justify-content-start"
+            >Fashion</button>
+            <p class="text-light strike d-flex justify-content-start p-0 m-0">
+              <s>$220.00</s>
+            </p>
             <p class="price d-flex justify-content-start p-0 m-0">$190.00</p>
           </div>
+
+          <!-- OverLayMenu1 -->
+          <div id="overLayMenu1">
+            <OverLayMenu1></OverLayMenu1>
+          </div>
+          <!-- OverLayMenu1 end -->
+
         </div>
         <!-- overlay content end -->
       </div>
@@ -33,11 +45,16 @@
 </template>
 
 <script>
-export default {};
+import OverLayMenu1 from "@/components/overlay-menu/OverLayMenu1.vue";
+
+export default {
+  components: {
+    OverLayMenu1,
+  },
+};
 </script>
 
 <style scoped>
-
 .my-card-style {
   width: 21.875rem;
   height: 25rem;
@@ -71,10 +88,10 @@ export default {};
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(31, 48, 143, 0.9);
+  background-color: rgba(31, 48, 143, 0.95);
   /* color: rgb(14, 21, 61); */
   opacity: 0;
-  transition: opacity 0.25s;
+  transition: opacity 0.4s;
 }
 #my-overlay1:hover {
   position: absolute;
@@ -87,13 +104,15 @@ export default {};
   opacity: 1;
 }
 
-
-
-
 #my-overlay1 .btn {
   border-color: var(--white) !important;
 }
 
+#my-overlay1 .btn:hover {
+  border-color: rgba(32, 211, 194, 0.2) !important;
+  /* border: none; */
+  background-color: rgba(32, 211, 194, 0.5) !important;
+}
 
 #my-overlay1 .overlay-content1 {
   margin: 0 0 20px 20px;
@@ -108,4 +127,11 @@ export default {};
   font-size: 24px;
   font-weight: 700;
 }
+
+#overLayMenu1 {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
 </style>
