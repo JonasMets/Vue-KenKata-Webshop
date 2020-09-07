@@ -20,11 +20,20 @@
       </div>
     </div>
 
-<!-- här ska det vara en carousel med    cards? -->
+    <!-- här ska det vara en carousel med    cards? -->
     <!-- card -->
     <CardNewArrivals></CardNewArrivals>
 
-
+<!-- test -->
+    <!-- <div class="container">
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-toggle="tooltip"
+        data-placement="left"
+        title="Tooltip on left"
+      >Tooltip on left</button>
+    </div> -->
 
 
   </div>
@@ -34,14 +43,21 @@
 import CardNewArrivals from "@/components/newarrivals/CardNewArrivals.vue";
 
 export default {
-
-components :{
-  CardNewArrivals 
-}
-
+  components: {
+    CardNewArrivals,
+  },
 };
 </script>
 
-<style scoped>
+<style >
+
+/* .tooltip > .tooltip-inner {
+  background-color: red;
+} */
+
+/* .tooltip.bs-tooltip-auto[x-placement^="left"] .arrow::before,
+.tooltip.bs-tooltip-left .arrow::before {
+  border-left-color: red;
+} */
 
 </style>

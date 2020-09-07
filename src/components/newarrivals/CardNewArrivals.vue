@@ -99,7 +99,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(14, 21, 61, 0.9);
+  background-color: rgba(14, 21, 61, 0.95);
   /* color: rgb(14, 21, 61); */
   opacity: 1;
 }
