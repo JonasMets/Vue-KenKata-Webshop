@@ -68,6 +68,10 @@ export default {
  color: var(--primaryColor);
 }
 
+.my-bg-primary {
+  background-color: var(--primaryColor);
+}
+
 #app {
   font-family: "Roboto", sans-serif !important;
   -webkit-font-smoothing: antialiased;

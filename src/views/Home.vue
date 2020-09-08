@@ -15,7 +15,9 @@
       <NewArrivals></NewArrivals>
     </section>
 
-
+    <section id="bannerNewCustomerBennefit">
+      <bannerNewCustomer></bannerNewCustomer>
+    </section>
   </div>
 </template>
 
@@ -27,6 +29,7 @@ import UserArgument1 from "@/components/why-use-our-site/UserArgument1.vue";
 // import ShopByCategory1 from "@/components/shop-by-category/ShopByCategory1.vue";
 import ShopByCategory1 from "@/components/shop-by-category/ShopByCategory1.vue";
 import NewArrivals from "@/components/newarrivals/NewArrivals.vue";
+import bannerNewCustomer from "@/components/banner/bannerNewCustomerBennefit1.vue";
 
 export default {
   name: "Home",
@@ -34,7 +37,8 @@ export default {
     BannerHome1,
     UserArgument1,
     ShopByCategory1,
-    NewArrivals
-  }
+    NewArrivals,
+    bannerNewCustomer,
+  },
 };
 </script>

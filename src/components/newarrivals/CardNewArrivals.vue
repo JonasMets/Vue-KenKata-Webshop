@@ -28,9 +28,9 @@
               class="btn btn-sm btn-outline-primary text-light d-flex justify-content-start"
             >Fashion</button>
             <p class="text-light strike d-flex justify-content-start p-0 m-0">
-              <s>$220.00</s>
+              <s> {{product.targetprice}} </s>
             </p>
-            <p class="price d-flex justify-content-start p-0 m-0">$190.00</p>
+            <p class="price d-flex justify-content-start p-0 m-0"> {{product.price}} </p>
           </div>
 
           <!-- OverLayMenu1 -->

@@ -73,7 +73,7 @@ let colors = '<div class="d-flex">  <div class="my-color-dot-black mr-1 ml-1 ord
 
 let images ='<img src="http://placehold.it/20x20" alt="" class="my-color-dot-black"> <img src="http://placehold.it/20x20" alt="" class="my-color-dot-black"> <img src="http://placehold.it/20x20" alt="" class="my-color-dot-black"> <img src="http://placehold.it/20x20" alt="" class="my-color-dot-black">';
 
-let images2 = '<img :src="require(\'@/assets/BlackDot.png\')" alt="" ">';
+let images2 = "<img src=require('@/assets/BlackDot.png') alt=\"\">";
 
 
 

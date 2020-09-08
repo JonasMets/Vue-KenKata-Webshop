@@ -63,7 +63,8 @@ export default {
         {
           category: "Shirt",
           name: "Blue silk flare sleeved top",
-          price: "$190.00",
+          targetprice: "$25",
+          price: "$19.00",
           badge: "NEW",
           image: require('@/assets/Productsleeve.png')
             ,
@@ -71,6 +72,7 @@ export default {
         {
           category: "Coat",
           name: "New look men's coat",
+          targetprice: "$220",
           price: "$190.00",
           badge: "NEW",
           image:
@@ -79,6 +81,7 @@ export default {
         {
           category: "Sport wear",
           name: "Circle pattern girls shirt",
+          targetprice: "$120",
           price: "$99",
           badge: "NEW",
           image:require('@/assets/GirlsShirt.png')
@@ -87,7 +90,8 @@ export default {
         {
           category: "Outwear",
           name: "Black jacket",
-          price: "$219",
+          targetprice: "$200",
+          price: "$150",
           badge: "NEW",
           image:
             require('@/assets/MensCoat.png'),
