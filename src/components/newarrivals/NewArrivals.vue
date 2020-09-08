@@ -22,42 +22,81 @@
 
     <!-- här ska det vara en carousel med    cards? -->
     <!-- card -->
-    <CardNewArrivals></CardNewArrivals>
+    <!-- <CardNewArrivals></CardNewArrivals> -->
+    <div class="container justify-content-center">
+      <div class="row justify-content-center align-items-center">
+        <div class="col justify-content-center">
+          <!-- :autoplay="true" :items="3" :loop="true" id="slider1" -->
+          <carousel
+            :autoplay="true"
+            :nav="false"
+            :items="3"
+            :loop="true"
+            :dots="true"
+            :responsive="{0:{items:1,nav:false},600:{items:2,nav:false},1100:{items:3,nav:false}}"
+            :autoplayHoverPause="true"
+          >
 
-<!-- test -->
-    <!-- <div class="container">
-      <button
-        type="button"
-        class="btn btn-secondary"
-        data-toggle="tooltip"
-        data-placement="left"
-        title="Tooltip on left"
-      >Tooltip on left</button>
-    </div> -->
+          <CardNewArrivals v-for="(product, index) in newProducts" :key="index" :product="product" />
 
 
+          </carousel>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import CardNewArrivals from "@/components/newarrivals/CardNewArrivals.vue";
 
+import carousel from "vue-owl-carousel";
+
 export default {
   components: {
     CardNewArrivals,
+    carousel,
+  },
+  data() {
+    return {
+      newProducts: [
+        {
+          category: "Shirt",
+          name: "Blue silk flare sleeved top",
+          price: "$190.00",
+          badge: "NEW",
+          image: require('@/assets/Productsleeve.png')
+            ,
+        },
+        {
+          category: "Coat",
+          name: "New look men's coat",
+          price: "$190.00",
+          badge: "NEW",
+          image:
+            require('@/assets/MensCoat.png'),
+        },
+        {
+          category: "Sport wear",
+          name: "Circle pattern girls shirt",
+          price: "$99",
+          badge: "NEW",
+          image:require('@/assets/GirlsShirt.png')
+            ,
+        },
+        {
+          category: "Outwear",
+          name: "Black jacket",
+          price: "$219",
+          badge: "NEW",
+          image:
+            require('@/assets/MensCoat.png'),
+        },
+      ],
+    };
   },
 };
 </script>
 
 <style >
-
-/* .tooltip > .tooltip-inner {
-  background-color: red;
-} */
-
-/* .tooltip.bs-tooltip-auto[x-placement^="left"] .arrow::before,
-.tooltip.bs-tooltip-left .arrow::before {
-  border-left-color: red;
-} */
-
 </style>

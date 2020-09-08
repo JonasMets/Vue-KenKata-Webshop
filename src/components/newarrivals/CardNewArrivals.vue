@@ -7,18 +7,21 @@
         <div>
           <!--  rounded-circle d-flex justify-content-center-->
           <div class="myAlert1 d-flex align-items-center justify-content-center">New</div>
+          <!-- @/assets/Productsleeve.png -->
           <img
-            src="@/assets/Productsleeve.png"
+            :src="product.image"
             class="card-img-top my-img-bg img-fluid"
             alt="sleeve"
           />
+          <!-- {{product.image}} -->
         </div>
-        <div class="card-footer myCard-footer text-left rounded-bottom">Blue silk flare sleeved top</div>
+        <!-- Blue silk flare sleeved top -->
+        <div class="card-footer myCard-footer text-left rounded-bottom">{{product.name}}</div>
 
         <!-- overlay content -->
         <div id="my-overlay1" class="d-flex justify-content-start d-flex align-items-end">
           <div class="overlay-content1">
-            <div class="text-light head-text">New look men's coat</div>
+            <div class="text-light head-text">{{product.name}}</div>
             <!-- <div class="btn btn-outline-primary text-light">Fashion</div> -->
             <button
               type="button"
@@ -51,6 +54,9 @@ export default {
   components: {
     OverLayMenu1,
   },
+  props: {
+    product: {}
+  }
 };
 </script>
 

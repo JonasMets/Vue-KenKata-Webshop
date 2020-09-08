@@ -13,13 +13,12 @@
     ></div> -->
 
      <!--test content  title='test add link'  -->
+     <!-- data-content=" <a href='#'> <img src='@/assets/BlackDot.png' alt=''> </a> <a href='#' > <img src='@/assets/PinkDot.png' alt=''> </a> <a href='#' > <img src='@/assets/PurpleDot.png' alt=''> </a> <a href='#' > <img src='@/assets/TurquoiseDot.png' alt=''> </a>"  -->
     <a href="" id="mytooltipcolorselector"
       class="my-color-selector" role="button" data-placement="left" 
-      data-toggle="popover" title="" 
-      data-content=" <a href='#' > <div class='my-color-selector'> </div> </a> <a href='#' > <div class='my-color-selector'> </div> </a> <a href='#' > <div class='my-color-selector'> </div> </a> <a href='#' > <div class='my-color-selector'> </div> </a>" 
-      data-original-title=""></a>
+      data-toggle="popover"></a>
     
-    
+    <!-- <img src='@/assets/BlackDot.png' alt=''> -->
 
     <a
       href="#"
@@ -58,7 +57,10 @@
       </svg>
     </a>
 
-    <a href="#"></a>
+    <!-- <a href="#"></a> -->
+
+
+
   </div>
 </template>
 
@@ -66,26 +68,27 @@
 export default {};
 
 $(document).ready(function () {
+
+let colors = '<div class="d-flex">  <div class="my-color-dot-black mr-1 ml-1 order-4"> </div> <div class="my-color-dot-pink mr-1 ml-1 order-3"> </div> <div class="my-color-dot-purple mr-1 ml-1 order-2"> </div> <div class="my-color-dot-turquoise mr-1 ml-1 order-1"> </div>  </div>';
+
+let images ='<img src="http://placehold.it/20x20" alt="" class="my-color-dot-black"> <img src="http://placehold.it/20x20" alt="" class="my-color-dot-black"> <img src="http://placehold.it/20x20" alt="" class="my-color-dot-black"> <img src="http://placehold.it/20x20" alt="" class="my-color-dot-black">';
+
+let images2 = '<img :src="require(\'@/assets/BlackDot.png\')" alt="" ">';
+
+
+
   // $('[data-toggle="tooltip"]').tooltip();
   $(".mytooltip1").tooltip();
 
-  // mytooltipcolorselector
-  // $('#mytooltipcolorselector').tooltip(
-  //   {
-  //     selector: true,
-  //       title: " <a href='#' > <div class='my-color-selector'></div> </a>  <a href='#' > <div class='my-color-selector'></div> </a> <a href='#' > <div class='my-color-selector'></div> </a> <a href='#' > <div class='my-color-selector'></div> </a>",
-  //       html: true
-  //   }
-  // );
+  
 
-  // $('#mytooltipcolorselector').popover({
-  //   html: true,
-  //   content: function () {
-  //     return $("#popover-content").html();
-  //   }
-  // });
-
-$('[data-toggle="popover"]').popover({ trigger: "manual" , html: true, animation:false})
+$('[data-toggle="popover"]').popover({
+   trigger: "manual",
+    html: true ,
+    // return ' <img src="http://placehold.it/20x20" alt="" class="my-color-selector">'
+    content: function () { return colors; }, 
+   animation:false
+   })
     .on("mouseenter", function () {
         var _this = this;
         $(this).popover("show");
@@ -120,6 +123,32 @@ $('[data-toggle="popover"]').popover({ trigger: "manual" , html: true, animation
   background-color: #fe6c6c;
   width: 20px;
   height: 20px;
+  border-radius: 50%;
+}
+
+.my-color-dot-black {
+  background-color: #333333;
+  color: #333333;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+.my-color-dot-pink {
+  background-color: #FE6C6C;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+.my-color-dot-purple {
+  background-color: #CA82D8;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+.my-color-dot-turquoise {
+  background-color: #82D8C6;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
 }
 
@@ -160,5 +189,7 @@ a .cls-1:hover {
 }
 
 /* my popper  */
-
+.popover{
+    max-width: 200px; /* Max Width of the popover (depending on the container!) */
+}
 </style>
