@@ -7,7 +7,9 @@
       <div class="card text-center position-relative rounded">
         <div>
           <!--  rounded-circle d-flex justify-content-center-->
-          <div class="myAlert1 d-flex align-items-center justify-content-center">{{product.badge}}</div>
+          <div class="myBadgeStyle1 d-flex align-items-center justify-content-center " :class="activeClass"
+          >{{product.badgeText}}</div>
+
           <!-- @/assets/Productsleeve.png -->
           <img :src="product.image" class="card-img-top my-img-bg img-fluid" alt="sleeve" />
           <!-- {{product.image}} -->
@@ -28,16 +30,15 @@
               <s>{{product.targetprice}}</s>
             </p>
             <p class="price d-flex justify-content-start p-0 m-0">{{product.price}}</p>
-
           </div>
 
-            <div class="mb-4">
-              <i class="fas fa-star color-primary"></i>
-              <i class="fas fa-star color-primary"></i>
-              <i class="fas fa-star color-primary"></i>
-              <i class="fas fa-star color-primary"></i>
-              <i class="far fa-star  color-primary"></i>
-            </div>
+          <div class="mb-4">
+            <i class="fas fa-star color-primary"></i>
+            <i class="fas fa-star color-primary"></i>
+            <i class="fas fa-star color-primary"></i>
+            <i class="fas fa-star color-primary"></i>
+            <i class="far fa-star color-primary"></i>
+          </div>
 
           <!-- OverLayMenu1 -->
           <div id="overLayMenu1">
@@ -46,10 +47,14 @@
           <!-- OverLayMenu1 end -->
         </div>
         <!-- overlay content end -->
+
+        <!-- <p>{{activeClass}}</p> -->
+
       </div>
       <!-- card end -->
     </div>
   </div>
+
 </template>
 
 <script>
@@ -62,7 +67,39 @@ export default {
   props: {
     product: {},
   },
+
+  data() {
+    return{
+       activeClass: setClassForBadge(this.product.badge),
+        danger:false
+    }
+     
+    
+  },
+  computed:{
+    // activeClass=() =>{
+
+    // }
+  }
 };
+
+
+// returnerar classnamn för badge
+function setClassForBadge(status) {
+  switch (status) {
+    case "HOT":
+      // this.danger=true
+      return "badge-danger";
+      break;
+    case "DISCOUNT":
+      return "badge-success";
+      break;
+
+    default:
+      return "my-badge-color";
+      break;
+  }
+}
 </script>
 
 <style scoped>
@@ -77,16 +114,20 @@ export default {
   font-size: 18px;
 }
 
-.myAlert1 {
+.myBadgeStyle1 {
   position: absolute;
   top: 10px;
   left: 10px;
-  background-color: var(--primaryColor);
+  /* background-color: var(--primaryColor); */
   color: var(--white);
   /* padding: 5px; */
   height: 60px;
   width: 60px;
   border-radius: 50%;
+}
+
+.my-badge-color {
+  background-color: var(--primaryColor);
 }
 
 .my-img-bg {

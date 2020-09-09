@@ -82,6 +82,7 @@ export default {
           targetprice: "$25",
           price: "$19.00",
           badge: "HOT",
+          badgeText: "HOT",
           image: require("@/assets/Productsleeve.png"),
           rating:5
         },
@@ -91,6 +92,7 @@ export default {
           targetprice: "$220",
           price: "$190.00",
           badge: "NEW",
+          badgeText: "NEW",
           image: require("@/assets/MensCoat.png"),
           rating:5
         },
@@ -99,7 +101,8 @@ export default {
           name: "Red women's blazer full",
           targetprice: "$120",
           price: "$99",
-          badge: "-30%",
+          badge: "DISCOUNT",
+          badgeText: "-30%",
           image: require("@/assets/GirlsShirt.png"),
           rating:5
         },
@@ -109,6 +112,7 @@ export default {
           targetprice: "$200",
           price: "$150",
           badge: "NEW",
+          badgeText: "NEW",
           image: require("@/assets/MensCoat.png"),
           rating:5
         },
