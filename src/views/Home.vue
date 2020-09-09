@@ -18,6 +18,12 @@
     <section id="bannerNewCustomerBennefit">
       <bannerNewCustomer></bannerNewCustomer>
     </section>
+
+
+    <section id="featuredProducts">
+      <FeaturedProducts></FeaturedProducts>
+    </section>
+
   </div>
 </template>
 
@@ -28,8 +34,14 @@ import BannerHome1 from "@/components/banner/BannerHome1.vue";
 import UserArgument1 from "@/components/why-use-our-site/UserArgument1.vue";
 // import ShopByCategory1 from "@/components/shop-by-category/ShopByCategory1.vue";
 import ShopByCategory1 from "@/components/shop-by-category/ShopByCategory1.vue";
-import NewArrivals from "@/components/newarrivals/NewArrivals.vue";
+// 
+// import NewArrivals from "@/components/newarrivals/NewArrivals.vue";
+import NewArrivals from "@/components/newarrivals/NewArrivalsV2.vue";
+// 
 import bannerNewCustomer from "@/components/banner/bannerNewCustomerBennefit1.vue";
+
+// featured products
+import FeaturedProducts from "@/components/featured-products/FeaturedProducts.vue";
 
 export default {
   name: "Home",
@@ -39,6 +51,7 @@ export default {
     ShopByCategory1,
     NewArrivals,
     bannerNewCustomer,
+    FeaturedProducts
   },
 };
 </script>

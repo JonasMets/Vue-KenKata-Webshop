@@ -3,14 +3,15 @@
   <div class="row align-items-center justify-content-center overflow-hidden">
 
     <!-- button prev align-items-center align-self-center d-flex justify-content-end-->
-    <div class="col-1    m-0 p-0  d-flex justify-content-end">
+    <!--                                d-flex justify-content-end -->
+    <div class="col-1  d-none d-xl-block m-0 p-0  ">
       <button class="btn my-btn-prev-next pt-2 mt-5">
         <i class="fas fa-chevron-left fa-2x"></i>
       </button>
     </div>
 
-    <!-- carousel section col-md-auto-->
-    <div class="col-md-auto  p-0">
+    <!-- carousel section col-md-auto    col-sm-auto col-md-auto col-lg-auto col-xl-auto-->
+    <div class="col-10 p-0">
       <div class="container mt-5 justify-content-center text-center">
         <div class="row">
           <div class="col">
@@ -33,8 +34,9 @@
 
       <!-- här ska det vara en carousel med    cards? -->
       <!-- card -->
-      <!-- <CardNewArrivals></CardNewArrivals> -->
-      <div class="container justify-content-center">
+      <!-- <CardNewArrivals></CardNewArrivals> container-->
+      <!--        container -->
+      <div class=" justify-content-center">
         <!-- <div class="row justify-content-center align-items-center"> -->
         <!-- <div class="col justify-content-center"> -->
         <!-- :autoplay="true" :items="3" :loop="true" id="slider1" -->
@@ -56,8 +58,8 @@
         </carousel>-->
 
         <!--std Owl -->
-        <div class="row align-items-center justify-content-center">
-          <div class="col-7 col-md-12 col-lg-12">
+        <!-- <div class="row align-items-center justify-content-center"> -->
+          <!-- <div class="col-7 col-md-12 col-lg-12"> -->
             <div class="owl-carousel owl-theme" id="slider2">
               <!-- <div class="item d-flex justify-content-center align-items-center"> -->
               <CardNewArrivals
@@ -67,8 +69,8 @@
               />
               <!-- </div> -->
             </div>
-          </div>
-        </div>
+          <!-- </div> -->
+        <!-- </div> -->
         <!-- std Owl end -->
         <!-- </div> -->
         <!-- </div> -->
@@ -77,7 +79,7 @@
     <!-- carousel section end -->
 
     <!-- button next align-self-center d-flex justify-content-start-->
-    <div class="col-1    m-0 p-0  ">
+    <div class="col-1  d-none d-xl-block m-0 p-0  ">
       <button class="btn my-btn-prev-next pt-2 mt-5">
         <i class="fas fa-chevron-right fa-2x"></i>
       </button>
