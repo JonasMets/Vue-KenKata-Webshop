@@ -83,7 +83,7 @@ export default {
           price: "$19.00",
           badge: "HOT",
           badgeText: "HOT",
-          image: require("@/assets/Productsleeve.png"),
+          image: require("@/assets/WomenWinter.png"),
           rating:5
         },
         {
@@ -103,7 +103,7 @@ export default {
           price: "$99",
           badge: "DISCOUNT",
           badgeText: "-30%",
-          image: require("@/assets/GirlsShirt.png"),
+          image: require("@/assets/WomenBlazer.png"),
           rating:5
         },
         {

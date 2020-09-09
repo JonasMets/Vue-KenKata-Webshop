@@ -32,7 +32,7 @@
             <p class="price d-flex justify-content-start p-0 m-0">{{product.price}}</p>
           </div>
 
-          <div class="mb-4">
+          <div class="mb-4 my-rating-stars">
             <i class="fas fa-star color-primary"></i>
             <i class="fas fa-star color-primary"></i>
             <i class="fas fa-star color-primary"></i>
@@ -185,4 +185,11 @@ function setClassForBadge(status) {
   top: 1rem;
   right: 1rem;
 }
+
+.my-rating-stars {
+  position: absolute;
+  bottom: 0.2rem;
+  right: 1.2rem;
+}
+
 </style>
