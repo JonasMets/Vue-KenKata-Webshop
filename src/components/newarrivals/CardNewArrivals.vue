@@ -1,7 +1,8 @@
 <template>
   <div>
     <!-- d-flex justify-content-center -->
-    <div class="container">
+    <!-- <div class="container"> -->
+      <div class="item d-flex justify-content-center align-items-center">
       <!-- style="width: 18rem;" -->
       <div class="card text-center position-relative my-card-style rounded">
         <div>

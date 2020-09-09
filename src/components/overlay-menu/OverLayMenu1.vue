@@ -1,25 +1,11 @@
 <template>
   <!-- OverLayMenu1  -->
   <div id="overlaysidemenu1" class="overlay-side-menu rounded-pill pt-3 pb-3">
-    <!-- round circle for color select-->
-    <!-- title="Select Color"  -->
-    <!-- <div
-      id="mytooltipcolorselector"
-      class="my-color-selector"
-      data-toggle="popover"
-      data-trigger="focus"
-      data-placement="left"
-      data-style="mypops"
-    ></div> -->
-
-     <!--test content  title='test add link'  -->
-     <!-- data-content=" <a href='#'> <img src='@/assets/BlackDot.png' alt=''> </a> <a href='#' > <img src='@/assets/PinkDot.png' alt=''> </a> <a href='#' > <img src='@/assets/PurpleDot.png' alt=''> </a> <a href='#' > <img src='@/assets/TurquoiseDot.png' alt=''> </a>"  -->
+    
     <a href="" id="mytooltipcolorselector"
       class="my-color-selector" role="button" data-placement="left" 
       data-toggle="popover"></a>
     
-    <!-- <img src='@/assets/BlackDot.png' alt=''> -->
-
     <a
       href="#"
       class="mytooltip1"
@@ -57,10 +43,6 @@
       </svg>
     </a>
 
-    <!-- <a href="#"></a> -->
-
-
-
   </div>
 </template>
 
@@ -73,20 +55,17 @@ let colors = '<div class="d-flex">  <div class="my-color-dot-black mr-1 ml-1 ord
 
 let images ='<img src="http://placehold.it/20x20" alt="" class="my-color-dot-black"> <img src="http://placehold.it/20x20" alt="" class="my-color-dot-black"> <img src="http://placehold.it/20x20" alt="" class="my-color-dot-black"> <img src="http://placehold.it/20x20" alt="" class="my-color-dot-black">';
 
-let images2 = "<img src=require('@/assets/BlackDot.png') alt=\"\">";
+let images2 = '<img src="images/TurquoiseDot.png" alt=""> <img src="images/PurpleDot.png" alt="">  <img src="images/PinkDot.png" alt=""> <img src="images/BlackDot.png" alt="">';
+// let images2 = '<img src="@/assets/BlackDot.png" alt="">  ';
 
-
-
-  // $('[data-toggle="tooltip"]').tooltip();
+  // 
   $(".mytooltip1").tooltip();
-
-  
 
 $('[data-toggle="popover"]').popover({
    trigger: "manual",
     html: true ,
     // return ' <img src="http://placehold.it/20x20" alt="" class="my-color-selector">'
-    content: function () { return colors; }, 
+    content: function () { return images2; }, 
    animation:false
    })
     .on("mouseenter", function () {

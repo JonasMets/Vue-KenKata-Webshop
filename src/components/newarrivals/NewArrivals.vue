@@ -27,7 +27,8 @@
       <div class="row justify-content-center align-items-center">
         <div class="col justify-content-center">
           <!-- :autoplay="true" :items="3" :loop="true" id="slider1" -->
-          <carousel
+          <!-- vue-owl -->
+          <!-- <carousel
             :autoplay="true"
             :nav="false"
             :items="3"
@@ -36,11 +37,28 @@
             :responsive="{0:{items:1,nav:false},600:{items:2,nav:false},1100:{items:3,nav:false}}"
             :autoplayHoverPause="true"
           >
+            <CardNewArrivals
+              v-for="(product, index) in newProducts"
+              :key="index"
+              :product="product"
+            />
+          </carousel> -->
 
-          <CardNewArrivals v-for="(product, index) in newProducts" :key="index" :product="product" />
-
-
-          </carousel>
+          <!--std Owl -->
+          <div class="row align-items-center justify-content-center">
+            <div class="col-7 col-md-12 col-lg-12">
+              <div class="owl-carousel owl-theme" id="slider2">
+                <!-- <div class="item d-flex justify-content-center align-items-center"> -->
+                  <CardNewArrivals
+                    v-for="(product, index) in newProducts"
+                    :key="index"
+                    :product="product"
+                  />
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+          <!-- std Owl end -->
         </div>
       </div>
     </div>
@@ -66,8 +84,7 @@ export default {
           targetprice: "$25",
           price: "$19.00",
           badge: "NEW",
-          image: require('@/assets/Productsleeve.png')
-            ,
+          image: require("@/assets/Productsleeve.png"),
         },
         {
           category: "Coat",
@@ -75,8 +92,7 @@ export default {
           targetprice: "$220",
           price: "$190.00",
           badge: "NEW",
-          image:
-            require('@/assets/MensCoat.png'),
+          image: require("@/assets/MensCoat.png"),
         },
         {
           category: "Sport wear",
@@ -84,8 +100,7 @@ export default {
           targetprice: "$120",
           price: "$99",
           badge: "NEW",
-          image:require('@/assets/GirlsShirt.png')
-            ,
+          image: require("@/assets/GirlsShirt.png"),
         },
         {
           category: "Outwear",
@@ -93,13 +108,44 @@ export default {
           targetprice: "$200",
           price: "$150",
           badge: "NEW",
-          image:
-            require('@/assets/MensCoat.png'),
+          image: require("@/assets/MensCoat.png"),
         },
       ],
     };
   },
 };
+
+
+$(document).ready(function () {
+  // owl owl.carousel och owl.theme.default
+  var owl2 = $("#slider2");
+  owl2.owlCarousel({
+    items: 4,
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    // ändrar antal som ska visas responsivt
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+      },
+      600: {
+        items: 1,
+        nav: false,
+        loop: true,
+      },
+      1000: {
+        items: 3,
+        nav: false,
+        loop: true,
+      },
+    },
+  });
+});
+
 </script>
 
 <style >
