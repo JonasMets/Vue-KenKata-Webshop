@@ -19,7 +19,7 @@
 <!-- -12 col-md-4 col-lg-6 -->
         <div class="col">
           <p class="my-text-white">Donec pulvinar arcu vitae ipsum varius cursus. Nunc iaculis fermentum iaculis. Nunc pulvinar purus at erat lacinia, ut convallis nibh consequat. Integer nulla nisi, aliquam at tellus a, viverra scelerisque purus. Nam pretium iaculis ultrices.</p>
-          <button class="btn rounded-pill btn-learn-now pl-4 pr-4">LEARN MORE</button>
+          <button class="btn rounded-pill btn-learn-now pl-4 pr-4 mb-5">LEARN MORE</button>
         </div>
       </div>
     </div>

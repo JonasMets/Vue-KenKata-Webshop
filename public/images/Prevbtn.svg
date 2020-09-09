@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #e3e3e3;
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Prev_btn" data-name="Prev btn" transform="translate(-313 -2547)">
+    <g id="Ellipse_7" data-name="Ellipse 7" class="cls-1" transform="translate(313 2547)">
+      <circle class="cls-3" cx="32" cy="32" r="32"/>
+      <circle class="cls-4" cx="32" cy="32" r="31"/>
+    </g>
+    <path id="Path_46" data-name="Path 46" class="cls-2" d="M169.674,304.456l14,14,14-14" transform="translate(656.343 2395.052) rotate(90)"/>
+  </g>
+</svg>

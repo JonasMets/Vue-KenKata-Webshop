@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.828" height="30.828" viewBox="0 0 16.828 30.828">
+  <defs>
+    <style>
+      .btncls-1 {
+        fill: none;
+        stroke: #e3e3e3;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <path id="PrevChevron" data-name="Prev Chevron" class="btncls-1" d="M169.674,304.456l14,14,14-14" transform="translate(319.871 -168.26) rotate(90)"/>
+</svg>

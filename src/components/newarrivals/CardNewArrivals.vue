@@ -3,8 +3,8 @@
     <!-- d-flex justify-content-center -->
     <!-- <div class="container"> -->
       <div class="item d-flex justify-content-center align-items-center">
-      <!-- style="width: 18rem;" -->
-      <div class="card text-center position-relative my-card-style rounded">
+      <!-- style="width: 18rem;"                     my-card-style-->
+      <div class="card text-center position-relative  rounded">
         <div>
           <!--  rounded-circle d-flex justify-content-center-->
           <div class="myAlert1 d-flex align-items-center justify-content-center">New</div>

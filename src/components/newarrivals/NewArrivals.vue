@@ -1,34 +1,45 @@
 <template>
-  <div>
-    <div class="container mt-5 justify-content-center text-center">
-      <div class="row">
-        <div class="col">
-          <div class="d-flex justify-content-center font-play">
-            <h2 class="fs-36 font-weight-bolder">
-              NEW
-              <span class="color-primary fs-36 font-weight-bolder">ARRIVALS</span>
-            </h2>
-          </div>
-          <div class="d-flex justify-content-center">
-            <img src="@/assets/wave.png" alt class />
-          </div>
-          <!--  d-flex justify-content-center-->
-          <div class="d-flex justify-content-center">
-            <p>Check out our latest products from top fashion designers</p>
+  <!-- row -->
+  <div class="row align-items-center justify-content-center overflow-hidden">
+
+    <!-- button prev align-items-center align-self-center d-flex justify-content-end-->
+    <div class="col-1    m-0 p-0  d-flex justify-content-end">
+      <button class="btn my-btn-prev-next pt-2 mt-5">
+        <i class="fas fa-chevron-left fa-2x"></i>
+      </button>
+    </div>
+
+    <!-- carousel section col-md-auto-->
+    <div class="col-md-auto  p-0">
+      <div class="container mt-5 justify-content-center text-center">
+        <div class="row">
+          <div class="col">
+            <div class="d-flex justify-content-center font-play">
+              <h2 class="fs-36 font-weight-bolder">
+                NEW
+                <span class="color-primary fs-36 font-weight-bolder">ARRIVALS</span>
+              </h2>
+            </div>
+            <div class="d-flex justify-content-center">
+              <img src="@/assets/wave.png" alt class />
+            </div>
+            <!--  d-flex justify-content-center-->
+            <div class="d-flex justify-content-center">
+              <p>Check out our latest products from top fashion designers</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- här ska det vara en carousel med    cards? -->
-    <!-- card -->
-    <!-- <CardNewArrivals></CardNewArrivals> -->
-    <div class="container justify-content-center">
-      <div class="row justify-content-center align-items-center">
-        <div class="col justify-content-center">
-          <!-- :autoplay="true" :items="3" :loop="true" id="slider1" -->
-          <!-- vue-owl -->
-          <!-- <carousel
+      <!-- här ska det vara en carousel med    cards? -->
+      <!-- card -->
+      <!-- <CardNewArrivals></CardNewArrivals> -->
+      <div class="container justify-content-center">
+        <!-- <div class="row justify-content-center align-items-center"> -->
+        <!-- <div class="col justify-content-center"> -->
+        <!-- :autoplay="true" :items="3" :loop="true" id="slider1" -->
+        <!-- vue-owl -->
+        <!-- <carousel
             :autoplay="true"
             :nav="false"
             :items="3"
@@ -42,27 +53,37 @@
               :key="index"
               :product="product"
             />
-          </carousel> -->
+        </carousel>-->
 
-          <!--std Owl -->
-          <div class="row align-items-center justify-content-center">
-            <div class="col-7 col-md-12 col-lg-12">
-              <div class="owl-carousel owl-theme" id="slider2">
-                <!-- <div class="item d-flex justify-content-center align-items-center"> -->
-                  <CardNewArrivals
-                    v-for="(product, index) in newProducts"
-                    :key="index"
-                    :product="product"
-                  />
-                <!-- </div> -->
-              </div>
+        <!--std Owl -->
+        <div class="row align-items-center justify-content-center">
+          <div class="col-7 col-md-12 col-lg-12">
+            <div class="owl-carousel owl-theme" id="slider2">
+              <!-- <div class="item d-flex justify-content-center align-items-center"> -->
+              <CardNewArrivals
+                v-for="(product, index) in newProducts"
+                :key="index"
+                :product="product"
+              />
+              <!-- </div> -->
             </div>
           </div>
-          <!-- std Owl end -->
         </div>
+        <!-- std Owl end -->
+        <!-- </div> -->
+        <!-- </div> -->
       </div>
     </div>
+    <!-- carousel section end -->
+
+    <!-- button next align-self-center d-flex justify-content-start-->
+    <div class="col-1    m-0 p-0  ">
+      <button class="btn my-btn-prev-next pt-2 mt-5">
+        <i class="fas fa-chevron-right fa-2x"></i>
+      </button>
+    </div>
   </div>
+  <!-- row end -->
 </template>
 
 <script>
@@ -115,7 +136,6 @@ export default {
   },
 };
 
-
 $(document).ready(function () {
   // owl owl.carousel och owl.theme.default
   var owl2 = $("#slider2");
@@ -145,8 +165,32 @@ $(document).ready(function () {
     },
   });
 });
-
 </script>
 
-<style >
+<style scoped>
+.btncls-1 {
+  fill: none;
+  stroke: #e3e3e3;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+
+.my-btn-prev-next {
+  /* position: absolute; */
+  /* top: 10px; */
+  /* left: 10px; */
+  /* background-color: var(--primaryColor); */
+  color: #e3e3e3;
+  /* padding: 5px; */
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border-color: #e3e3e3;
+}
+
+.my-btn-prev-next:hover {
+ background-color: var(--primaryColor);
+  border-color: #e3e3e3;
+}
 </style>
