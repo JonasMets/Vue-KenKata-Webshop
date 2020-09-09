@@ -72,6 +72,10 @@ export default {
   background-color: var(--primaryColor);
 }
 
+.my-text-white {
+  color: var(--white);
+}
+
 #app {
   font-family: "Roboto", sans-serif !important;
   -webkit-font-smoothing: antialiased;
@@ -87,6 +91,10 @@ export default {
 .fs-36 {
     font-size: 36px !important;
   }
+
+.fs-60 {
+  font-size: 60px !important;
+}
 
 /* #nav {
   padding: 30px;
