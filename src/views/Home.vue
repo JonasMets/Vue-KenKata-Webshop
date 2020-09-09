@@ -24,6 +24,10 @@
       <FeaturedProducts></FeaturedProducts>
     </section>
 
+    <section id="flashSales">
+        <BannerFlashSale></BannerFlashSale>
+    </section>
+
   </div>
 </template>
 
@@ -43,6 +47,9 @@ import bannerNewCustomer from "@/components/banner/bannerNewCustomerBennefit1.vu
 // featured products
 import FeaturedProducts from "@/components/featured-products/FeaturedProducts.vue";
 
+// banner flash sales
+import BannerFlashSale from "@/components/banner/BannerFlashSale.vue";
+
 export default {
   name: "Home",
   components: {
@@ -51,7 +58,8 @@ export default {
     ShopByCategory1,
     NewArrivals,
     bannerNewCustomer,
-    FeaturedProducts
+    FeaturedProducts,
+    BannerFlashSale
   },
 };
 </script>
