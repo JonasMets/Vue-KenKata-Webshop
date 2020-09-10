@@ -68,6 +68,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
+    autoplaySpeed: 1500,
     // ändrar antal som ska visas responsivt
     responsive: {
       0: {
@@ -121,5 +122,7 @@ $(document).ready(function () {
 .argument-text {
   margin-right: 35px;
 }
+
+
 
 </style>

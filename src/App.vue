@@ -109,6 +109,27 @@ export default {
   font-weight: 500;
 }
 
+/* owl */
+.owl-carousel .active span {
+    width:10px;
+    height:10px;
+    margin:5px 7px;
+    background: var(--primaryColor) !important;
+    display:block;
+    /* -webkit-backface-visibility:visible; */
+    -webkit-transition:opacity 200ms ease;
+    -moz-transition:opacity 200ms ease;
+    -ms-transition:opacity 200ms ease;
+    -o-transition:opacity 200ms ease;
+    transition:opacity 200ms ease;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    border-radius:30px;
+}
+
+
+
+
 /* #nav {
   padding: 30px;
 } */

@@ -4,18 +4,6 @@
       <img src="@/assets/Quote.png" alt class="img-fluid" />
     </div>
 
-    <!-- <div class="container mt-5">
-      <div class="row">
-        <div class="col">
-          <TestimonialsCard></TestimonialsCard>
-        </div>
-      </div>
-    </div> -->
-
-
-
-
-
 
       <div class="container mt-5">
       <!--   overflow-hidden -->
@@ -34,6 +22,7 @@
 
             <div class="owl-carousel owl-theme" id="slider4">
               <!-- testimonial card slider-->
+          <TestimonialsCard></TestimonialsCard>
           <TestimonialsCard></TestimonialsCard>
           <TestimonialsCard></TestimonialsCard>
           
@@ -74,11 +63,13 @@ components:{
   var owl4 = $("#slider4");
   owl4.owlCarousel({
     items: 2,
+    dotsEach:true,
     loop: true,
     margin: 10,
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
+    autoplaySpeed: 1500,
     // ändrar antal som ska visas responsivt
     responsive: {
       0: {
@@ -158,5 +149,6 @@ components:{
   right: 10px;
   z-index: 2;
 }
+
 
 </style>

@@ -126,11 +126,13 @@ $(document).ready(function () {
   var owl2 = $("#slider2");
   owl2.owlCarousel({
     items: 4,
+    dotsEach:true,
     loop: true,
     margin: 10,
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
+    autoplaySpeed: 1500,
     // ändrar antal som ska visas responsivt
     responsive: {
       0: {
