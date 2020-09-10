@@ -1,26 +1,28 @@
 <template>
-  <div class="d-flex">
+  <!-- d-flex -->
+  <div class>
     <div class="card blog-card posistion-relative">
       <!--  -->
       <div class="card blog-card-info-bg d-flex flex-column justify-content-center">
         <div
           class="blog-card-info-date d-flex flex-column align-items-center justify-content-center"
         >
-          <p class="p-0 m-0 font-play my-text-white fs-36">29</p>
-          <p class="p-0 m-0 my-text-white">MAR</p>
+          <p class="p-0 m-0 font-play my-text-white fs-36">{{blog.date}}</p>
+          <p class="p-0 m-0 my-text-white"> {{blog.month}} </p>
         </div>
 
         <div class="ml-4 mt-5 pt-2">
-          <p class="my-text-white fz-14">
-            By
-            <span>
-              <a href class="my-text-white">Adam Moore</a>
-            </span>
-          </p>
+          <!-- d-flex align-items-center -->
+          <div class="d-block">
+            <div class="my-text-white fz-14">
+              By 
+              <a class=" my-text-white fz-14 " href="#">{{blog.name}}</a> 
+            </div>
+          </div>
+
           <div class>
-            <p class="color-primary text-wrap fs-16 font-weight-medium" style="width: 12rem;">
-              A beautiful scenery in the
-              world we are missing
+            <p class="color-primary text-wrap fs-16 font-weight-medium overflow-hidden" style="width: 12rem;">
+              {{blog.blogText}}
             </p>
           </div>
           <!--  -->
@@ -42,7 +44,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+
+props: {
+    blog: {},
+  }
+
+};
 </script>
 
 <style scoped>
@@ -82,5 +90,4 @@ export default {};
   font-size: 18px;
   font-weight: 500;
 }
-
 </style>
