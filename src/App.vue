@@ -88,12 +88,25 @@ export default {
   font-size: 14px !important;
 }
 
+
+.fs-16 {
+  font-size: 16px !important;
+}
+
+.fs-18 {
+  font-size: 18px !important;
+}
+
 .fs-36 {
     font-size: 36px !important;
   }
 
 .fs-60 {
   font-size: 60px !important;
+}
+
+.font-weight-medium {
+  font-weight: 500;
 }
 
 /* #nav {

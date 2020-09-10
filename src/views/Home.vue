@@ -31,7 +31,7 @@
       <TopSellers></TopSellers>
     </section>
 
-    <section id="testimonials">
+    <section id="testimonials" class="mt-5">
       <Testimonials></Testimonials>
     </section>
 
