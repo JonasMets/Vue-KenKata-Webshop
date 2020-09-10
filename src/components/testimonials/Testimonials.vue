@@ -139,7 +139,7 @@ components:{
 .my-btn-prev-alignx {
   position: absolute;
   top: 160px;
-  left: 50px;
+  left: 40px;
   z-index: 2;
 }
 

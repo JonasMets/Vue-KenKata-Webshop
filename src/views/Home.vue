@@ -35,6 +35,10 @@
       <Testimonials></Testimonials>
     </section>
 
+    <section id="latestBlog" class="mt-5">
+      <LatestBlog></LatestBlog>
+    </section>
+
   </div>
 </template>
 
@@ -63,6 +67,9 @@ import TopSellers from "@/components/top-sellers/TopSellers.vue";
 // Testimonials
 import Testimonials from "@/components/testimonials/Testimonials.vue";
 
+// latest blog
+import LatestBlog from "@/components/latest-blog/LatestBlog.vue";
+
 export default {
   name: "Home",
   components: {
@@ -74,7 +81,8 @@ export default {
     FeaturedProducts,
     BannerFlashSale,
     TopSellers,
-    Testimonials
+    Testimonials,
+    LatestBlog
   },
 };
 </script>
