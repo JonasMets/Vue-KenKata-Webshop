@@ -30,7 +30,7 @@
         <use xlink:href="@/assets/Compareicon.svg#Compare_icon" class />
       </svg>
     </a>
-    <a href="#" class="mytooltip1" data-toggle="tooltip" data-placement="left" title="Search Item">
+    <a href="#" class="mytooltip1" data-toggle="tooltip" data-placement="left" title="Quick view">
       <!--  -->
       <svg class="icons cls-1">
         <use xlink:href="@/assets/Searchicon.svg#Search_icon" class />
