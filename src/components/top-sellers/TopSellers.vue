@@ -22,21 +22,21 @@
     </div>
 
     <div class="container">
-      <div class="row align-items-center">
+      <div class="row align-items-center justify-content-center">
         <div class="col-6">
-          <div class="my-img1 h-100">
+          <div class="my-img1 ">
             <CardTopSellers :product="newProducts[0]" />
           </div>
         </div>
         <div class="col-6">
-          <div class="row">
-            <div class="col-12">
-              <div class="my-img2 h-100">
+          <div class="row d-flex flex-column">
+            <div class="col">
+              <div class="my-img2 ">
                 <CardTopSellers :product="newProducts[1]" />
               </div>
             </div>
-            <div class="col-12">
-              <div class="my-img3 h-100">
+            <div class="col">
+              <div class="my-img3 ">
                 <CardTopSellers :product="newProducts[2]" />
               </div>
             </div>
@@ -63,7 +63,8 @@ export default {
           targetprice: "$25",
           price: "$19.00",
           badge: "",
-          badgeText: "HOT",
+          badgeText: "",
+          logo: require("@/assets/BeximSmall.png"),
           image: require("@/assets/MensDenim.png"),
           rating: 5,
         },
@@ -72,19 +73,21 @@ export default {
           name: "Women's leather bag and shoe",
           targetprice: "$220",
           price: "$190.00",
-          badge: "NEW",
-          badgeText: "NEW",
+          badge: "",
+          badgeText: "",
+          logo: require("@/assets/LightonSmall.png"),
           image: require("@/assets/WomensBag.png"),
           rating: 5,
         },
         {
-          category: "Outwear",
+          category: "Shoes",
           name: "New look men's sneakers",
           targetprice: "$120",
           price: "$99",
-          badge: "DISCOUNT",
-          badgeText: "-30%",
-          image: require("@/assets/MensSneakers.png"),
+          badge: "",
+          badgeText: "",
+          logo: require("@/assets/RosimoSmall.png"),
+          image: require("@/assets/MensSneakers3.png"),
           rating: 5,
         },
         {
@@ -92,8 +95,8 @@ export default {
           name: "Black jacket",
           targetprice: "$200",
           price: "$150",
-          badge: "NEW",
-          badgeText: "NEW",
+          badge: "",
+          badgeText: "",
           image: require("@/assets/MensCoat.png"),
           rating: 5,
         },
@@ -105,13 +108,15 @@ export default {
 
 <style scoped>
 .my-img1 {
-  width: 100%;
+  /* min-width: 550px; */
   max-height: 700px;
 }
 .my-img2 {
+  /* width: 100%; */
   max-height: 345px;
 }
 .my-img3 {
+  /* width: 100%; */
   max-height: 345px;
 }
 </style>

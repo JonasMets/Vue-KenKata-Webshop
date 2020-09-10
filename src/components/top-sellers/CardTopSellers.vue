@@ -5,10 +5,17 @@
       <!--   -->
       <div class="card text-center position-relative rounded h-100">
         <div>
-          <!-- -->
-          <div class="myBadgeStyle1 d-flex align-items-center justify-content-center " :class="activeClass"
+          <!-- badge -->
+          <div
+            v-if="product.badgeText"
+            class="myBadgeStyle1 d-flex align-items-center justify-content-center"
+            :class="activeClass"
           >{{product.badgeText}}</div>
-          <!--  -->
+          <!-- logo -->
+          <div v-if="product.logo">
+            <img :src="product.logo" class="myLogotyle1 img-fluid" alt="sleeve" />
+          </div>
+          <!-- image -->
           <img :src="product.image" class="card-img-top my-img-bg img-fluid w-100" alt="sleeve" />
           <!-- -->
         </div>
@@ -23,7 +30,7 @@
             <button
               type="button"
               class="btn btn-sm btn-outline-primary text-light d-flex justify-content-start"
-            >Fashion</button>
+            >{{product.category}}</button>
             <p class="text-light strike d-flex justify-content-start p-0 m-0">
               <s>{{product.targetprice}}</s>
             </p>
@@ -44,13 +51,10 @@
           </div>
           <!-- OverLayMenu1 end -->
         </div>
-        
-
       </div>
       <!-- card end -->
     </div>
   </div>
-
 </template>
 
 <script>
@@ -65,20 +69,16 @@ export default {
   },
 
   data() {
-    return{
-       activeClass: setClassForBadge(this.product.badge),
-        danger:false
-    }
-     
-    
+    return {
+      activeClass: setClassForBadge(this.product.badge),
+      danger: false,
+    };
   },
-  computed:{
+  computed: {
     // activeClass=() =>{
-
     // }
-  }
+  },
 };
-
 
 // returnerar classnamn för badge
 function setClassForBadge(status) {
@@ -120,6 +120,17 @@ function setClassForBadge(status) {
   height: 60px;
   width: 60px;
   border-radius: 50%;
+}
+.myLogotyle1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--white);
+  /* color: var(--white); */
+  padding: 10px 10px 10px 10px;
+  /* height: 60px; */
+  /* width: 60px; */
+  border-radius: 5px;
 }
 
 .my-badge-color {
@@ -187,5 +198,4 @@ function setClassForBadge(status) {
   bottom: 0.2rem;
   right: 1.2rem;
 }
-
 </style>
