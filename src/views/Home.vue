@@ -39,6 +39,11 @@
       <LatestBlog></LatestBlog>
     </section>
 
+    <section id="subscribenow" class="mt-5">
+      <SubscribeNow></SubscribeNow>
+    </section>
+
+
   </div>
 </template>
 
@@ -70,6 +75,9 @@ import Testimonials from "@/components/testimonials/Testimonials.vue";
 // latest blog
 import LatestBlog from "@/components/latest-blog/LatestBlog.vue";
 
+// subscribe
+import SubscribeNow from "@/components/banner/SubscribeNow.vue";
+
 export default {
   name: "Home",
   components: {
@@ -82,7 +90,8 @@ export default {
     BannerFlashSale,
     TopSellers,
     Testimonials,
-    LatestBlog
+    LatestBlog,
+    SubscribeNow
   },
 };
 </script>

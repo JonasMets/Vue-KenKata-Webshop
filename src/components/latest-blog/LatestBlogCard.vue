@@ -32,8 +32,8 @@
           </div>
           <div>
             <button
-              class="btn rounded-pill color-primary btn-readmore text-uppercase pl-4 pr-4 mt-3"
-            >Shop Now</button>
+              class="btn rounded-pill color-primary btn-readmore fs-16 pl-3 pr-3 mt-3"
+            >Read Moore</button>
           </div>
 
           <!--  -->
