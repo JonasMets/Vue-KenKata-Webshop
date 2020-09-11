@@ -17,6 +17,11 @@
           <div class="d-flex justify-content-center">
             <p>Read our latest posts about our events and trending news</p>
           </div>
+
+          <div class="d-none d-block d-sm-none">
+            <button class="btn rounded-pill color-primary my-bg-primary text-light">Go To blog</button>
+          </div>
+
         </div>
       </div>
     </div>
@@ -36,7 +41,7 @@
           </button>
         </div>
 
-        <div class="col-12">
+        <div class="col-12 d-none d-lg-block">
           <!--        container -->
           <div class="justify-content-center">
             <!--std Owl -->

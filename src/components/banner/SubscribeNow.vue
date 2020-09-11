@@ -2,7 +2,7 @@
   <div class="bg-banner-subscribe">
     <div class="container">
       <div class="row align-items-center justify-content-between">
-        <div class="col-5">
+        <div class="col-12 col-lg-5">
           <!-- d-flex justify-content-center -->
           <div class="font-play">
             <h2 class="fs-36 font-weight-bolder text-uppercase">
@@ -38,7 +38,7 @@
           </div>
         </div>
         <!-- col end -->
-        <div class="col-6">
+        <div class="col-lg-6 d-none d-lg-block">
           <img src="@/assets/Backgroundimage.png" alt="" class="img-fluid">
         </div>
         <!-- col end -->
