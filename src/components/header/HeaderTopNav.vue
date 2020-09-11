@@ -52,8 +52,8 @@
             </li>
 
             <!-- social media -->
-            <div>
-              <ul class="navbar-nav ml-auto">
+            <div class="">
+              <ul class="navbar-nav ml-auto d-flex flex-row justify-content-between">
                 <li class="nav-item">
                   <a class="nav-link text-light" href="#">
                     <i class="fab fa-facebook-f"></i>
