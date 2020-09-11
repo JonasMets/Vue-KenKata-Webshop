@@ -12,7 +12,7 @@
           </div>
           <!-- d-flex justify-content-center -->
           <div class>
-            <p class="text-wrap" style="width: 26rem;">
+            <p class="text-wrap" style="max-width: 26rem;">
               Signup for awesome news about our new products and
               know our special discounts on products.
             </p>
