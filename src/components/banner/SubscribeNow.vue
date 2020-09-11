@@ -17,7 +17,7 @@
               know our special discounts on products.
             </p>
           </div>
-          <div class="my-input-area rounded-pill border">
+          <div class="my-input-area rounded-pill border mb-2">
             <div class="input-group border-0">
               <input
                 type="text "

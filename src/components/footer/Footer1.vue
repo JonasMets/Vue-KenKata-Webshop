@@ -126,7 +126,7 @@
         <div class="pt-1 pb-1">
           <!-- align-items-center justify-content-center justify-content-around -->
           <div class="row  justify-content-between align-items-center">
-            <div class="col-12 col-lg-5">
+            <div class="col-12 col-lg-5 ">
               <div class="row p-2">
                 <div class="col ">
                   <p class="text-light m-0">&copy; copyright 2020 KenKata</p>
@@ -134,7 +134,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-5">
+            <div class="col-12 col-lg-5 order-first order-lg-last">
               <!-- justify-content-center -->
               <div class="row justify-content-around p-2">
                 <div class="col-3 col-lg-2 p-1">
