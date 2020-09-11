@@ -17,26 +17,31 @@
           <div class="d-flex justify-content-center">
             <p>Check out our weekly top sellers in all category</p>
           </div>
+
+          <div class="d-none d-block d-sm-none">
+            <button class="btn rounded-pill color-primary my-bg-primary text-light">Show</button>
+          </div>
+
         </div>
       </div>
     </div>
 
     <div class="container">
       <div class="row align-items-center justify-content-center">
-        <div class="col-6">
-          <div class="my-img1 ">
+        <div class="col-6 d-none d-lg-block">
+          <div class="my-img1">
             <CardTopSellers :product="newProducts[0]" />
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-6 d-none d-lg-block">
           <div class="row d-flex flex-column">
             <div class="col">
-              <div class="my-img2 ">
+              <div class="my-img2">
                 <CardTopSellers :product="newProducts[1]" />
               </div>
             </div>
             <div class="col">
-              <div class="my-img3 ">
+              <div class="my-img3">
                 <CardTopSellers :product="newProducts[2]" />
               </div>
             </div>

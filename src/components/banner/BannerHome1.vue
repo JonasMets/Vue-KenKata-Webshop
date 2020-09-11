@@ -7,7 +7,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row align-items-center">
-              <div class="col">
+              <div class="col pb-sm-2">
                 <div>
                   <h2 class="font-play fs-60">Shopping is</h2>
                   <h2 class="font-play font-weight-bold fs-60 color-primary">MORE FUN</h2>
@@ -19,10 +19,10 @@
                 </div>
 
                 <button
-                  class="btn rounded-pill color-primary text-uppercase pl-4 pr-4 btn-shopnow"
+                  class="btn rounded-pill color-primary text-uppercase pl-4 pr-4 mb-3 btn-shopnow"
                 >Shop Now</button>
               </div>
-              <div class="col">
+              <div class="col d-none d-lg-block">
                 <img src="@/assets/Banner-thumb.png" class="d-block w-100" />
               </div>
             </div>
@@ -31,8 +31,8 @@
             <div class="row align-items-center">
               <div class="col">
                 <div>
-                  <h2 class="font-play">MORE FUN</h2>
-                  <h2 class="font-play font-weight-bold fs-60 color-primary text-uppercase">Shopping is</h2>
+                  <h2 class="font-play fs-60">MORE FUN</h2>
+                  <h2 class="font-play font-weight-bold fs-60 color-primary text-uppercase">Shopping</h2>
                 </div>
                 <div>
                   <p
@@ -41,10 +41,10 @@
                 </div>
 
                 <button
-                  class="btn rounded-pill color-primary text-uppercase pl-4 pr-4 btn-shopnow"
+                  class="btn rounded-pill color-primary text-uppercase pl-4 pr-4 mb-3 btn-shopnow"
                 >Shop Now</button>
               </div>
-              <div class="col">
+              <div class="col d-none d-lg-block">
                 <img src="@/assets/Banner-thumb.png" class="d-block w-100" />
               </div>
             </div>

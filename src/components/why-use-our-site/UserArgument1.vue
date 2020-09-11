@@ -3,7 +3,7 @@
   <div class="overflow-hidden mt-5">
 
     <div class="row align-items-center justify-content-center">
-      <div class="col-7 col-md-12 col-lg-12">
+      <div class="col-10 col-md-12 col-lg-12">
         <div class="owl-carousel owl-theme" id="slider1">
           <div class="item d-flex justify-content-center align-items-center">
             <div id="arguments1" class="d-flex align-items-center rounded">
@@ -73,7 +73,7 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1,
-        nav: true,
+        nav: false,
       },
       600: {
         items: 3,
