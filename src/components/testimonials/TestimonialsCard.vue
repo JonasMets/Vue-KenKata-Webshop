@@ -1,14 +1,15 @@
 <template>
   <div class="container">
     <div class="row align-items-center justify-content-center">
-      <div class="col-2">
+      <div class="col-2 d-none d-lg-block">
         <div class>
-          <img src="@/assets/Testimonialthumb.png" alt class="img-thumbnail" />
+          <img src="@/assets/Testimonialthumb.png" alt class="img-thumbnail img-fluid" />
         </div>
       </div>
     </div>
     <div class="row align-items-center justify-content-center">
-      <div class="col-2">
+      <!-- col-2 -->
+      <div class="col-12 col-lg-2">
         <div class="text-center mt-3">
           <i class="fas fa-star color-primary"></i>
           <i class="fas fa-star color-primary"></i>
