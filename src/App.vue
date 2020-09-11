@@ -76,6 +76,11 @@ export default {
   background-color: var(--mydark-blue);
 }
 
+.my-bg-dblue-opacity-65 {
+    background-color: #0E153D;
+    opacity: 0.70;
+  }
+
 .my-text-white {
   color: var(--white);
 }
