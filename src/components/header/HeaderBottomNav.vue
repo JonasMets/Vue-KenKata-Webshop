@@ -132,6 +132,8 @@
               <img src="../../assets/chevrondown2.png" alt="">
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <!--  -->
+                <router-link to="/about" class="nav-link">About Us</router-link>
                 <a class="dropdown-item" href="#">Page X</a>
                 <a class="dropdown-item" href="#">Page X</a>
                 <div class="dropdown-divider"></div>
