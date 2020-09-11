@@ -80,6 +80,11 @@ props: {
   padding: 0;
 }
 
+a:hover {
+  color: var(--white) !important;
+  text-decoration: underline;
+}
+
 .my-btn-border {
   border-color: var(--white) !important;
 }

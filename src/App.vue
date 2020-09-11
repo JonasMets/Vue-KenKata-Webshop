@@ -72,6 +72,10 @@ export default {
   background-color: var(--primaryColor);
 }
 
+.my-bg-dark-blue {
+  background-color: var(--mydark-blue);
+}
+
 .my-text-white {
   color: var(--white);
 }
@@ -95,6 +99,10 @@ export default {
 
 .fs-18 {
   font-size: 18px !important;
+}
+
+.fs-24 {
+  font-size: 24px !important;
 }
 
 .fs-36 {
