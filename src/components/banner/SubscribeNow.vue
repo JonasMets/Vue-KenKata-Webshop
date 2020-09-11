@@ -24,14 +24,14 @@
                 class="form-control border-0 ml-2"
                 placeholder="Enter email address"
                 aria-label="Enter email address"
-                aria-describedby="button-addon2"
+                aria-describedby="button-Subscribe"
               />
               <div class="input-group-append">
                 <!-- btn-outline-secondary -->
                 <button
                   class="btn rounded-pill color-primary my-bg-primary btn-outline-secondary text-light"
                   type="button"
-                  id="button-addon2"
+                  id="button-Subscribe"
                 >Subscribe</button>
               </div>
             </div>

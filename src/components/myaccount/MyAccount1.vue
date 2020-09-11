@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex justify-content-center align-items-center">
+  <div class="d-flex justify-content-center align-items-center justify-content-between">
     <!-- <i class="far fa-user"></i> -->
     <a href="#" class="nav-link">
       <img src="@/assets/Usericon.png" alt /> My account
