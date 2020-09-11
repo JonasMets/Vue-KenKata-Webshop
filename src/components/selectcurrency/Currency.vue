@@ -9,6 +9,7 @@
       aria-expanded="false"
     >USD</a>
     <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">USD</a>
       <a class="dropdown-item" href="#">SEK</a>
       <a class="dropdown-item" href="#">EUR</a>
     </div>
