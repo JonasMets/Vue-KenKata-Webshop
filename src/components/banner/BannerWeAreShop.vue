@@ -12,7 +12,7 @@
               <div>
                 <p
                   class="my-text-white text-wrap"
-                  style="width: 24rem;"
+                  style="width: 22rem;"
                 >Vivamus dignissim a ex eu ornare. Ut fermentum orci vel diam ultricies faucibus. Quisque quis erat sed</p>
               </div>
 
